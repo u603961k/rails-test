@@ -1,7 +1,9 @@
-function About() {
-  return (
-    <h1>About Pageだってよ</h1>
-  )
+import Layout from '../components/Layout'
+
+export default function About() {
+  return <h1>About Page</h1>
 }
 
-export default About
+About.getLayout = function getLayout(page: string) {
+  return <Layout>{page}</Layout>
+};
